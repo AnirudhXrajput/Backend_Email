@@ -24,7 +24,7 @@ app.post('/echo', async (req, res) => {
 
     // Email options
     const mailOptions = {
-        from: 'Anirudh@finseritter.com', // sender address
+       from: '"Finsen Ritter" <Anirudh@finseritter.com>', // sender address
         to: data.email, // client email from POST body
         subject: "Thank you for contacting us",
         text: `Hello ${data.name},\n\nWe received your message: ${data.message}\n\nBest regards,\nFinsen Ritter Team`
